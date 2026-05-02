@@ -10,7 +10,8 @@ struct Client
     unsigned int comptes[10];
 };
 Client john={25, 180, {13594, 45796,0,0,0,0,0,0,0,0}};
-
+typedef unsigned int chiffre;
+chiffre manou = 1956;
 int main()
 {
     vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
@@ -25,5 +26,6 @@ int main()
     printf("John's height: %d cm\n", john.taille);
     printf("John's first account balance: %u\n", john.comptes[0]);
     printf("John's second account balance: %u\n", john.comptes[1]);
+    printf("Manou's chiffre: %u\n", manou);
         return 0;
 }
